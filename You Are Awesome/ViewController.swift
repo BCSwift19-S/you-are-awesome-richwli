@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         let msg3 = "I like puppers"
         let msg4 = "I like cattos"
         let msg5 = "I like squirrels"
-        let msg6 = "I like Squirtles"
+        let msg6 = "I like squirtles"
 
         var labelArray: [String] = [msg1,msg2,msg3,msg4,msg5,msg6]
         

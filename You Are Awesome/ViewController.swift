@@ -9,13 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("The view loaded huzzah")
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBAction func aCuteButtonPress(_ sender: UIButton) {
+        label.text = "A Cute Label"
         print("Hello World!")
     }
     

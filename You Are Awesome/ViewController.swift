@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     @IBAction func aCuteButtonPress(_ sender: UIButton) {
         label.text = "A Cute Label"
-        print("Hello World!")
+        print("Hello!")
     }
     
     override func didReceiveMemoryWarning() {

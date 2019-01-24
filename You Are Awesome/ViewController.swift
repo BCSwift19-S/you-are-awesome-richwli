@@ -19,14 +19,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func aCuteButton1(_ sender: UIButton) {
-        msgLabel.text = "I am a cute button!!!"
-        msgLabel.textColor = UIColor.blue
-    }
+        let msg1 = "I like cats."
+        let msg2 = "I like dogs."
+        if(msgLabel.text == msg1){
+            msgLabel.text = msg2
+            msgLabel.textColor = UIColor.blue
+        }else{
+            msgLabel.text=msg1
+            msgLabel.textColor = UIColor.red
+        }
     
-    @IBAction func aCuteButton2(_ sender: UIButton) {
-        msgLabel.text = "I am a CUTER button!!!"
-        msgLabel.textColor = UIColor.red
     }
-    }
+}
 
 

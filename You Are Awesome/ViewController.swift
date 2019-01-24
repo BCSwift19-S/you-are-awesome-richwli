@@ -21,15 +21,23 @@ class ViewController: UIViewController {
     @IBAction func aCuteButton1(_ sender: UIButton) {
         let msg1 = "I like cats."
         let msg2 = "I like dogs."
+        let msg3 = "I like puppers"
+        let msg4 = "I like cattos"
+        
         if(msgLabel.text == msg1){
             msgLabel.text = msg2
+            msgLabel.textColor = UIColor.blue
+        }else if (msgLabel.text == msg2){
+            msgLabel.text=msg3
+            msgLabel.textColor = UIColor.red
+        }else if (msgLabel.text == msg3){
+            msgLabel.text=msg4
             msgLabel.textColor = UIColor.blue
         }else{
             msgLabel.text=msg1
             msgLabel.textColor = UIColor.red
         }
-    
-    }
+}
 }
 
 

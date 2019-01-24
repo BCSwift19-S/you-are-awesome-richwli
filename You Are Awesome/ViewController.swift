@@ -9,23 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var msgLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("The view loaded huzzah")
         // Do any additional setup after loading the view, typically from a nib.
     }
-    @IBAction func aCuteButtonPress(_ sender: UIButton) {
-        label.text = "A Cute Label"
-        print("Hello!")
+    
+    @IBAction func aCuteButton1(_ sender: UIButton) {
+        msgLabel.text = "I am a cute button!!!"
+        msgLabel.textColor = UIColor.blue
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func aCuteButton2(_ sender: UIButton) {
+        msgLabel.text = "I am a CUTER button!!!"
+        msgLabel.textColor = UIColor.red
+    }
     }
 
-
-}
 

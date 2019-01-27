@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var msgLabel: UILabel!
-    var counter = 0
+    var index = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         print("The view loaded huzzah")
@@ -27,8 +27,13 @@ class ViewController: UIViewController {
         let msg6 = "I like squirtles"
 
         let labelArray: [String] = [msg1,msg2,msg3,msg4,msg5,msg6]
+        var newIndex = -1
+        repeat{
+            newIndex = Int.random(in: 0..<labelArray.count)
+        }while index == newIndex
         
-        msgLabel.text = labelArray.randomElement()
+        index = newIndex
+        msgLabel.text = labelArray[index]
         }
 }
 

@@ -26,17 +26,11 @@ class ViewController: UIViewController {
         let msg5 = "I like squirrels"
         let msg6 = "I like squirtles"
 
-        var labelArray: [String] = [msg1,msg2,msg3,msg4,msg5,msg6]
+        let labelArray: [String] = [msg1,msg2,msg3,msg4,msg5,msg6]
         
-        msgLabel.text = labelArray[counter]
-        
-        if(counter == labelArray.count-1){
-            counter = 0
-        }else{
-            print("Incremented")
-            counter += 1;
+        msgLabel.text = labelArray.randomElement()
         }
 }
-}
+
 
 

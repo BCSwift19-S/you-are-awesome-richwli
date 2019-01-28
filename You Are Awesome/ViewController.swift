@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         var msgArray:[String] = ["Bulbasaur is a swell guy",
                                  "I dig Bulbasaur!!!","Bulba Bulba",
                                  "Boba-Saur is my favorite drink!!!",
-                                 "Bulbasaur is a cabbage baby."]
+                                 "Bulbasaur is a cabbage baby." ]
         
         repeat{
             textIndex = Int.random(in: 0..<msgArray.count)
